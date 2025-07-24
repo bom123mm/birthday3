@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สุขสันต์วันเกิดนะ 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#ffdee9, #b5fffc);
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 3em;
+            color: #ff69b4;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px;
+        }
+
+        .photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+
+        .btn {
+            background: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ff85c1;
+        }
+
+        .hidden-message {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 30px;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>สุขสันต์วันเกิดที่รัก 💖</h1>
+    <img src="ployy - Copy.jpg" alt="รูปแฟน" class="photo" />
+    <p>ขอให้วันนี้เป็นวันที่ดีที่สุดในชีวิต เค้าอยากขอให้เธอมีความสุขมากๆ อยู่กับเค้ากับเรนนี่ไปนานๆเลย
+        เค้าชอบเลยเวลาเธอยิ้มมันน่ารักมากๆ ขอให้ปีนี้้ยิ้มเยอะๆน้า 🎉</p>
+    <button class="btn" onclick="showMessage()">คลิกเพื่อดูข้อความลับ 💌</button>
+    <div class="hidden-message" id="secretMessage">
+        เค้ารักเธอนะ อยากดูแลแบบนี้ไปนานๆๆ มาเป็นแฟนกันได้มั้ยยย
+
+
+    </div>
+    <audio src="some - Copy.mp3" controls></audio>
+
+    </audio>
+
+
+
+
+    <script>
+        function showMessage() {
+            document.getElementById('secretMessage').style.display = 'block';
+        }
+    </script>
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>สุขสันต์วันเกิด 💖</title>
+  <style>
+    body { margin:0; padding:0; overflow:hidden; position:relative; font-family: sans-serif; }
+    .heart-container { position:absolute; bottom:0; left:0; width:100%; height:100%; pointer-events:none; overflow:hidden; }
+    .heart {
+      position:absolute;
+      font-size: 24px;
+      opacity: 0;
+      animation: floatHeart 6s infinite ease-in-out;
+    }
+    @keyframes floatHeart {
+      0%   { opacity: 0; bottom: 0; transform: translateX(0); }
+      10%  { opacity: 1; }
+      50%  { bottom: 80%; transform: translateX(30px); }
+      90%  { opacity: 0; }
+      100% { bottom: 100%; }
+    }
+    #particles-js { position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
+  </style>
+</head>
+<body>
+  <!-- container สำหรับ floating hearts -->
+  <div class="heart-container"></div>
+
+  <!-- container สำหรับ particles.js confetti effect -->
+  <div id="particles-js"></div>
+
+  <!-- พื้นที่เนื้อหาเว็บ เช่น รูป ข้อความ ปุ่ม -->
+  <div class="content">
+    <!-- ใส่เนื้อหาเว็บวันเกิดของคุณที่นี่ -->
+  </div>
+
+  <!-- โหลด library particles.js ผ่าน CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    // สร้าง floating hearts แบบสุ่ม
+    const container = document.querySelector('.heart-container');
+    function spawnHeart(){
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.textContent = '❤️';
+      heart.style.left = `${Math.random()*80 + 10}%`;
+      heart.style.fontSize = `${Math.random()*20 + 20}px`;
+      container.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(spawnHeart, 400);
+
+    // ตั้งค่า particles.js ให้เป็น confetti หรือ heart เล็ก ๆ ลอยขึ้น
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 60 },
+        shape: { type: 'circle' },
+        size: { value: 6, random: true },
+        move: { direction: 'top', speed: 2, out_mode: 'out' },
+        color: { value: ['#ff69b4', '#ffb6c1', '#ffc0cb'] },
+        opacity: { value: 0.8, random: true }
+      },
+      interactivity: { detect_on: 'canvas' }
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marie Sticker Animation 🐾</title>
+  <style>
+    body { margin: 0; padding: 0; background: #fff; overflow: hidden; font-family: sans-serif; }
+    .sticker {
+      position: absolute;
+      width: 120px;
+      bottom: -150px;
+      left: 50%;
+      transform: translateX(-50%) scale(0);
+      animation: popUp 1s forwards, floatUp 6s 1s ease-in infinite;
+    }
+    @keyframes popUp {
+      0% { transform: translateX(-50%) scale(0); opacity: 0; }
+      60% { transform: translateX(-50%) scale(1.2); opacity: 1; }
+      100% { transform: translateX(-50%) scale(1); }
+    }
+    @keyframes floatUp {
+      0% { bottom: -150px; }
+      100% { bottom: 80%; }
+    }
+    .sticker:hover { animation: wiggle 0.5s infinite; }
+    @keyframes wiggle {
+      0%,100% { transform: translateX(-50%) rotate(0deg) scale(1); }
+      25% { transform: translateX(-50%) rotate(5deg) scale(1.05); }
+      75% { transform: translateX(-50%) rotate(-5deg) scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <img src="5df851ac55197a6d418b48899608b20f.gif"alt="Marie Sticker" class="sticker" id="sticker">
+
+  <script>
+    // ซ่อนได้หลัง a few loops
+    const sticker = document.getElementById('sticker');
+    setTimeout(() => {
+      sticker.style.display = 'none';
+    }, 8000);
+  </script>
+</body>
+</html>
+
+</body>
+
+</html>
